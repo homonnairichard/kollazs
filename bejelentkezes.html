@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigi>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stlye.css">
+    <title>Jelszó</title>
+    <link rel="icon" type="image/x-icon" href="./favikon/hatterkep_html.png">
+</head>
+<body>  
+  <div class="sidebar">
+    <a href="index.html" style="text-decoration: none;">Főoldal</a>
+    <a href="keplink.html" style="text-decoration: none;">Képlink</a>
+    <a href="lista.html" style="text-decoration: none;">Listák</a>
+    <a href="orarend.html" style="text-decoration: none;">Órarend</a>
+    <a href="kepek.html" style="text-decoration: none;">Évszakok</a>
+    <a href="urlap.html" style="text-decoration: none;">Űrlap</a>
+    <a href="pita.html" style="text-decoration: none;">Pitagorasz</a>
+    <a href="kosar.html" style="text-decoration: none;">Kosár</a>
+    <a class="active" href="bejelentkezes.html" style="text-decoration: none;">Jelszó</a>
+    <a href="termek.html" style="text-decoration: none;">Termékek</a>
+  </div>
+    
+<center>
+    <fieldset style="width: 10%;">
+        <legend style="text-align: center;">Bejelentkezés</legend>
+        <input type="text" name="felhasznalo" id="user" placeholder="Ird be a neved." required>
+        <br>
+        <input type="password" name="jelszó" id="password" placeholder="Ird be a jelszavad." required>
+        <br>
+        <button onclick="belep(user.value,password.value)">Belépés</button><button onclick="torol">Törlés<samp></samp></button>
+    </fieldset>
+</center>
+
+    <p id="felh" style="text-align: center;">Felhasznalónév</p>
+    <p id="jel"  style="text-align: center;">Jelszó</p>
+    <p id="bel"  style="text-align: center;">Belépési állapot.</p>
+
+    <script>
+        var felh = ""
+        var jel = ""
+        
+        termek = "peti"
+
+        function belep(username, password){
+            document.getElementById("felh").innerHTML = username
+            document.getElementById("jel").innerHTML = password
+            if (password == "kkszki"){
+                document.getElementById("bel").innerHTML = "Sikeres bejelentkezés."
+            }
+            else
+            {
+                document.getElementById("bel").innerHTML = "Sikertelen bejelentkezés."
+            }
+        }
+        window.open('https://homonnairichard.github.io/kollazs')
+    </script>
+
+    <div class="footer">
+        <p>Copyright 🂱 HR © </p>
+    </div>
+</body>
+</html>

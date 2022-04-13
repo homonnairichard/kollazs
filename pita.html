@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigi>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stlye.css">
+    <title>Pita</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a  href="index.html" style="text-decoration: none;">Főoldal</a>
+        <a href="keplink.html" style="text-decoration: none;">Képlink</a>
+        <a href="lista.html" style="text-decoration: none;">Listák</a>
+        <a href="orarend.html" style="text-decoration: none;">Órarend</a>
+        <a href="kepek.html" style="text-decoration: none;">Évszakok</a>
+        <a href="urlap.html" style="text-decoration: none;">Űrlap</a>
+        <a class="active" href="pita.html" style="text-decoration: none;">Pitagorasz</a>
+        <a href="kosar.html" style="text-decoration: none;">Kosár</a>
+        <a href="bejelentkezes.html" style="text-decoration: none;">Jelszó</a>
+        <a href="termek.html" style="text-decoration: none;">Termékek</a>
+      </div>
+    <div class="kozep">
+        <img src="img/pitagorasztetel-haromszog.jpg" alt="Háromszög" title="Háromszög" class="kep-kozep" style="width: 200px; height: 150px;">
+        <br><br>
+        <center>
+            <fieldset class="kep-kozep" style="width: fit-content;">
+                <input type="number" id="aoldal" placeholder="A">
+                <br><br>
+                <input type="number" id="boldal" placeholder="B">
+                <br><br>
+            <button onclick="pita(aoldal.value , boldal.value)">Számít</button>
+            </fieldset>
+        </center>
+        <br>
+        <h4>Eredmény:</h4>
+        <span id="osszeg"></span>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 🂱 HR © </p>
+      </div>
+
+    <script>
+        function pita(a, b) {
+            var c = 0
+            c = Math.sqrt(a * a + b * b)
+
+            document.getElementById("osszeg").innerHTML = c
+                
+        }
+
+
+
+    </script>
+    <div class="footer">
+        <p>Copyright 🂱 HR © </p>
+      </div>
+</body>
+
+</html>

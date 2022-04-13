@@ -1,0 +1,93 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(img/gif.gif);
+}
+fieldset{
+    width: fit-content;
+}
+legend{
+    background-color: teal;
+    border-radius: 8px;
+}
+input{
+    background-color: lightgreen;
+}
+button{
+    background-color: lightskyblue;
+}
+.kozep{
+    margin: 0 auto 0 auto;
+    display: block;
+}
+hr{
+    width: 15%;
+}
+input{
+    border-radius: 8px;
+}
+button{
+    border-radius: 8px;
+}
+::placeholder{
+    text-align: center;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: whitesmoke;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+   }
+   
+   .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+   }
+   
+   .sidebar a.active {
+    background-color: rgb(78, 75, 75);
+    color: white;
+   }
+   
+   .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color:white;
+   }
+   
+   div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+   }
+   
+   @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+   }
+   
+   @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+   }
+   @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Rubik+Beastly&display=swap');
+   
+   .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: oldlace;
+     color: black;
+     text-align: center;
+   }

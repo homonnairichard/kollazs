@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigi>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stlye.css">
+    <title>Richárd oldala</title>
+    <link rel="icon" type="image/x-icon" href="./favikon/hatterkep_html.png">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html" style="text-decoration: none;">Főoldal</a>
+        <a href="keplink.html" style="text-decoration: none;">Képlink</a>
+        <a href="lista.html" style="text-decoration: none;">Listák</a>
+        <a href="orarend.html" style="text-decoration: none;">Órarend</a>
+        <a href="kepek.html" style="text-decoration: none;">Évszakok</a>
+        <a class="active" href="urlap.html" style="text-decoration: none;">Űrlap</a>
+        <a href="pita.html" style="text-decoration: none;">Pitagorasz</a>
+        <a href="kosar.html" style="text-decoration: none;">Kosár</a>
+        <a href="bejelentkezes.html" style="text-decoration: none;">Jelszó</a>
+        <a href="termek.html" style="text-decoration: none;">Termékek</a>
+      </div>
+        <div class="content">
+            <form name="rendeles">
+                <h1 class="kozep">Rendelés</h1>
+                <fieldset>
+                    <legend>Vevő adatai:</legend>
+                    <p><label>Vezetéknév: <input type="szoveg" name="nev">
+                    <p><label>Keresztnév: <input type="szoveg" name="nev">
+                    <p><label>Telefonszám: <input type="szoveg" name="telefon" size="20"></label></p>
+                    <p><label>Email cím: <input type="szoveg" name="email" size="30"></label></p>
+                    <p><label for="">Születési idő: <input type='date' size="10"></label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Cím megadása</legend>
+                    <p><label>Irányítószám: <input type="szoveg" name="nev" size="6">
+                        <p><label for="orszagok">Ország: 
+                                <select title='Válassz úticélt!'>
+                                    <option disabled=disable selected style="text-align: center;">Válassz!</option>
+                                        <option>Magyarország</option>
+                                        <option>Szlovákia</option>
+                                        <option>Románia</option>
+                                        <option>Ausztria</option>
+                                        <option>Németország</option>
+                                        <option>Horvátország</option>
+                                        <option>Csehország</option>
+                                        <option>Ukrajna</option>
+                                        <option>Franciaország</option>
+                                        <option>Spanyolország</option>
+                                        <option>Irország</option>
+                                        <option>Olaszország</option>
+                                    </select>
+                            </label></p>
+                    <p><label>Város: <input type="szoveg" name="telefon" size="20"></label></p>
+                    <p><label>Utca: <input type="szoveg" name="email" size="18"></label></p>
+                    <p><label>Házszám: <input type="szoveg" name="telefon" size="2"></label></p>
+                    <p><input type='radio' name='gender'> Magáncélra.</p>
+                    <p><input type='radio' name='gender'> Cég számára.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fegyver tartozékok</legend>
+                    <p><label><input type="checkbox" name="meret" value="loszertarto">Lőszertartó (+2490 Ft)</label></p>
+                    <p><label><input type="checkbox" name="meret" value="fegyvertok">Fegyvertok (+3890 Ft)</label></p>
+                    <p><label><input type="checkbox" name="meret" value="csodugo">Csődugó (+690 Ft)</label></p>
+                    <p><label><input type="checkbox" name="meret" value="tar">Tár (+1190 Ft)</label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Végezetül</legend>
+                    <p><label>Mennyiség: <input type="number" name="mennyiseg"> darab</label></p>
+                    <p><label>Egyéb megjegyzés: <input type="szoveg" name="nev">
+                </fieldset>
+                <input  type='reset'>
+                <input  type='submit'>
+                <br><br><br><br><br>
+            </form>
+        </div>
+      <div class="footer">
+        <p>Copyright 🂱 HR © </p>
+      </div>
+</body>
+</html>
